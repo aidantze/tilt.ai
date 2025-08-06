@@ -2,7 +2,7 @@
   "name": "tilt-ai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aidantze.github.io/tilt.ai",
+  "homepage": "https://aidantze.github.io/tilt.ai/",
   "dependencies": {
     "gh-pages": "^6.3.0",
     "lucide-react": "^0.395.0",
