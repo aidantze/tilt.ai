@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/my-app/static/css/main.48357be4.css",
-    "main.js": "/my-app/static/js/main.fee1727b.js",
-    "index.html": "/my-app/index.html",
-    "main.48357be4.css.map": "/my-app/static/css/main.48357be4.css.map",
-    "main.fee1727b.js.map": "/my-app/static/js/main.fee1727b.js.map"
+    "main.css": "/tiltai/static/css/main.48357be4.css",
+    "main.js": "/tiltai/static/js/main.fee1727b.js",
+    "index.html": "/tiltai/index.html",
+    "main.48357be4.css.map": "/tiltai/static/css/main.48357be4.css.map",
+    "main.fee1727b.js.map": "/tiltai/static/js/main.fee1727b.js.map"
   },
   "entrypoints": [
     "static/css/main.48357be4.css",
