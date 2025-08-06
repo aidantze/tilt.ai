@@ -24,7 +24,7 @@ const DashboardHeader = () => {
                     <NavLink to="/dashboard" className={ navLinkClass }>Dashboard</NavLink>
                     <NavLink to="/prices" className={ navLinkClass }>Prices</NavLink>
                     <NavLink to="/strategies" className={ navLinkClass }>Strategies</NavLink>
-                    <NavLink to="/news" className={ navLinkClass }>News</NavLink>
+                    <NavLink to="/dashboard/news" className={ navLinkClass }>News</NavLink>
                 </div>
                 <div className="relative">
                     <button onClick={ () => setDropdownOpen(!dropdownOpen) } className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-gray-600">
