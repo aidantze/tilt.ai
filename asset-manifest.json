@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tilt.ai/static/css/main.48357be4.css",
-    "main.js": "/tilt.ai/static/js/main.fee1727b.js",
+    "main.js": "/tilt.ai/static/js/main.e1aebdb5.js",
     "index.html": "/tilt.ai/index.html",
     "main.48357be4.css.map": "/tilt.ai/static/css/main.48357be4.css.map",
-    "main.fee1727b.js.map": "/tilt.ai/static/js/main.fee1727b.js.map"
+    "main.e1aebdb5.js.map": "/tilt.ai/static/js/main.e1aebdb5.js.map"
   },
   "entrypoints": [
     "static/css/main.48357be4.css",
-    "static/js/main.fee1727b.js"
+    "static/js/main.e1aebdb5.js"
   ]
 }
