@@ -2,6 +2,9 @@
 
 This project is a cryptocurrency portfolio optimisation service, designed to rebalance holdings in response to abnormal sentiment shifts detected in crypto-related news. It retrieves OHLCV and news data from the CryptoCompare (CoinDesk) API, processes the data through a feature engineering and text pipeline, and performs VADER sentiment analysis and data aggregation to recommend optimal portfolio weights for a user's Crypto portfolio, before returning the results for visualisation in a simple web frontend.
 
+Access the frontend at: https://eloquent-sprinkles-0ad32e.netlify.app/
+*(Deployed using Netlify)*
+
 The project is divided into four stages based on the Data Factory Floor for financial market data analytics:
 1. Stage 1: data collection, retrieval and preprocessing
 2. Stage 2: feature engineering and text processing/cleaning
