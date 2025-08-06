@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ChartCard, TableCard, PageHeader, ImageModal } from './SharedComponents';
 import { MessageSquare } from 'lucide-react';
 

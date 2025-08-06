@@ -31,14 +31,13 @@ const LoginPage = () => {
                         <div className="mb-6">
                             <label className="block text-sm font-medium mb-1" htmlFor="password">Password</label>
                             <input type="password" id="password" className="w-full p-2 border rounded-md" placeholder="••••••••" />
-                            <a href="#" className="text-xs text-accent-cyan hover:underline mt-1 block text-right">Forgot Password?</a>
+                            <button type="button" className="text-xs text-accent-cyan hover:underline mt-1 block text-right w-full">Forgot Password?</button>
                         </div>
                         <button type="submit" className="w-full bg-accent-cyan text-white font-bold py-2 px-4 rounded-lg hover:opacity-90 transition-opacity">
                             Login
                         </button>
                         <p className="text-center text-xs text-gray-500 my-4">or continue with</p>
                         <div className="flex justify-center space-x-4">
-                            {/* Placeholder Icons */ }
                             <button type="button" className="p-2 border rounded-md hover:bg-gray-100">Google</button>
                             <button type="button" className="p-2 border rounded-md hover:bg-gray-100">Apple</button>
                         </div>
