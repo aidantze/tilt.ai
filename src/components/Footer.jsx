@@ -1,5 +1,6 @@
 import React from 'react';
 import { Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -13,10 +14,10 @@ const Footer = () => {
                     <div>
                         <h3 className="font-bold text-white mb-2">Quick Links</h3>
                         <ul className="space-y-1 text-sm">
-                            <li><a href="#" className="hover:text-white">About Us</a></li>
-                            <li><a href="#" className="hover:text-white">Products</a></li>
-                            <li><a href="#" className="hover:text-white">News</a></li>
-                            <li><a href="#" className="hover:text-white">Contact Us</a></li>
+                            <li><button className="hover:text-white text-left">About Us</button></li>
+                            <li><button className="hover:text-white text-left">Products</button></li>
+                            <li><Link to="/news" className="hover:text-white">News</Link></li>
+                            <li><button className="hover:text-white text-left">Contact Us</button></li>
                         </ul>
                     </div>
                     <div>
@@ -27,9 +28,10 @@ const Footer = () => {
                     <div>
                         <h3 className="font-bold text-white mb-2">Follow Us</h3>
                         <div className="flex space-x-4">
-                            <a href="#" className="hover:text-white"><Twitter /></a>
-                            <a href="#" className="hover:text-white"><Linkedin /></a>
-                            <a href="#" className="hover:text-white"><Youtube /></a>
+                            {/* FIX: Changed from <a> to <button> for non-navigating placeholders */ }
+                            <button className="hover:text-white"><Twitter /></button>
+                            <button className="hover:text-white"><Linkedin /></button>
+                            <button className="hover:text-white"><Youtube /></button>
                         </div>
                     </div>
                 </div>
