@@ -20,7 +20,7 @@ const dashboardImages = [
 ];
 
 const dashboardTables = [
-    { title: "Latest sentiment scores", url: "https://res.cloudinary.com/dg6nuqapw/raw/upload/v1754450555/latest_sentiment_scores_xfxl05.txt" },
+    { title: "Latest sentiment scores", url: "https://res.cloudinary.com/dg6nuqapw/raw/upload/v1754529545/latest_sentiment_scores_a70k2u.txt" },
     { title: "Coin performance ranking", url: "https://res.cloudinary.com/dg6nuqapw/raw/upload/v1754450555/coin_performance_summary_qudq2a.txt" }
 ];
 
