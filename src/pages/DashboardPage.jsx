@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChartCard, TableCard, PageHeader, ImageModal } from './SharedComponents';
+import NewsListPreview from '../components/NewsListPreview'; // Import the new component
 import { MessageSquare } from 'lucide-react';
 
 const dashboardImages = [
@@ -19,12 +20,17 @@ const dashboardImages = [
 ];
 
 const dashboardTables = [
-    { title: "Latest sentiment scores", url: "https://res.cloudinary.com/dg6nuqapw/raw/upload/v1754461708/latest_sentiment_scores_th9urd.txt" },
+    { title: "Latest sentiment scores", url: "https://res.cloudinary.com/dg6nuqapw/raw/upload/v1754450555/latest_sentiment_scores_xfxl05.txt" },
     { title: "Coin performance ranking", url: "https://res.cloudinary.com/dg6nuqapw/raw/upload/v1754450555/coin_performance_summary_qudq2a.txt" }
 ];
 
+const marketNewsData = [
+    { id: 1, title: "Global Economic Outlook Dims, Crypto Market Braces for Impact", snippet: "Central banks worldwide have signaled a hawkish stance, causing jitters across all asset classes...", date: "2025-08-07", source: "Global Macro", coins: "MARKET", score: -0.45, sentiment: "Negative" },
+    { id: 5, title: "DeFi Regulation Heats Up as G7 Leaders Meet", snippet: "A new joint task force aims to create a unified regulatory framework for decentralized finance...", date: "2025-08-06", source: "Policy Watch", coins: "MARKET, ETH", score: 0.15, sentiment: "Neutral" },
+    { id: 8, title: "Institutional Adoption of Bitcoin ETFs Hits Record High", snippet: "Major pension funds and asset managers are increasing their allocation to Bitcoin exchange-traded funds...", date: "2025-08-05", source: "Wall Street Crypto", coins: "MARKET, BTC", score: 0.78, sentiment: "Positive" }
+];
+
 const OnboardingModal = ({ onClose }) => {
-    // This is a simplified modal for demonstration
     return (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
             <div className="bg-white p-8 rounded-lg shadow-xl max-w-lg w-full">
@@ -84,6 +90,9 @@ const DashboardPage = () => {
                         />
                     )) }
                 </div>
+
+                <NewsListPreview title="Latest Market News" articles={ marketNewsData } />
+
                 <button className="fixed bottom-8 right-8 w-14 h-14 bg-accent-cyan rounded-full text-white flex items-center justify-center shadow-lg">
                     <MessageSquare size={ 28 } />
                 </button>

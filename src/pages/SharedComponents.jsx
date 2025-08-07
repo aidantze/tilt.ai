@@ -51,16 +51,18 @@ export const TableCard = ({ title, url }) => {
 };
 
 export const PageHeader = ({ title }) => (
-    <div className="flex justify-between items-center mb-6">
+    <div className="flex flex-col md:flex-row justify-between md:items-center mb-6 gap-4">
         <h1 className="text-3xl font-bold text-dark-text">{ title }</h1>
         <div className="flex items-center space-x-2">
-            <button className="p-2 bg-white rounded-md shadow hover:bg-gray-100"><Search size={ 20 } /></button>
-            <button className="p-2 bg-white rounded-md shadow hover:bg-gray-100"><Plus size={ 20 } /></button>
+            <div className="relative">
+                <Search size={ 18 } className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                <input type="text" placeholder="Search..." className="w-full md:w-64 p-2 pl-10 border rounded-md bg-white shadow-sm" />
+            </div>
+            <button className="p-2 bg-white rounded-md shadow-sm hover:bg-gray-100"><Plus size={ 20 } /></button>
         </div>
     </div>
 );
 
-// Updated Modal Component
 export const ImageModal = ({ imageUrl, title, onClose }) => {
     const handleContentClick = (e) => e.stopPropagation();
 
@@ -79,7 +81,6 @@ export const ImageModal = ({ imageUrl, title, onClose }) => {
                         <X size={ 24 } />
                     </button>
                 </div>
-                {/* FIX: Constraints are now directly on the image */ }
                 <div className="flex justify-center items-center">
                     <img
                         src={ imageUrl }

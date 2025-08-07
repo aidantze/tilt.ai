@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { ChartCard, TableCard, PageHeader, ImageModal } from './SharedComponents';
 
 const strategyImages = [
+    { title: "Performance metrics radar chart", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445486/performance_metrics_radar_strategy_jwbobz.png" },
     { title: "Cumulative returns for each strategy VS buy-hold (EW)", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445501/strategy_vs_buyhold_all_h7yi8v.png" },
     { title: "Performance heat map for each strategy", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445486/performance_heatmap_strategies_anqlej.png" },
-    { title: "Performance metrics radar chart", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445486/performance_metrics_radar_strategy_jwbobz.png" },
     { title: "Rolling Volatility for each portfolio strategy", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445488/rolling_volatility_strategies_x2yscm.png" },
     { title: "Rolling Sharpe Ratio for each portfolio strategy", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445487/rolling_sharpe_ratio_strategies_hrgvml.png" },
     { title: "Return Distribution for each strategy", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445487/return_distribution_all_strategies_vzf1s6.png" },

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChartCard, PageHeader, ImageModal } from './SharedComponents';
+import NewsListPreview from '../components/NewsListPreview'; // Import the new component
 
 const btcImages = [
     { title: "Daily average sentiment line graph for BTC", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754445491/sentiment_daily_line_BTC_acfga2.png" },
@@ -10,6 +11,11 @@ const btcImages = [
     { title: "Rolling Volatility for BTC", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754452891/rolling_volatility_btc_szuluq.png" },
     { title: "Rolling Sharpe Ratio for BTC", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754452891/rolling_sharpe_ratio_btc_gfhr6m.png" },
     { title: "Return Distribution for BTC", url: "https://res.cloudinary.com/dg6nuqapw/image/upload/v1754452891/return_distribution_btc_wvxi2h.png" },
+];
+
+const btcNewsData = [
+    { id: 4, title: "Bitcoin Halving Event Successfully Completed, Miners Adjust", snippet: "The fourth Bitcoin halving has occurred, cutting miner rewards from 6.25 BTC to 3.125 BTC per block...", date: "2025-08-07", source: "Blockchain Today", coins: "BTC", score: 0.65, sentiment: "Positive" },
+    { id: 7, title: "Analysts Divided on Short-Term BTC Price Action Post-Halving", snippet: "While some predict a supply shock will drive prices higher, others expect a period of consolidation...", date: "2025-08-06", source: "Crypto Capital", coins: "BTC", score: 0.05, sentiment: "Neutral" }
 ];
 
 const CoinPricesPage = () => {
@@ -49,6 +55,8 @@ const CoinPricesPage = () => {
                         />
                     )) }
                 </div>
+
+                <NewsListPreview title="Latest Bitcoin (BTC) News" articles={ btcNewsData } />
             </div>
         </>
     );
