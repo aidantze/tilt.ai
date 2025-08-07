@@ -15,7 +15,7 @@ const PublicHeader = () => {
         <header className="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
             <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
                 <Link to="/" className="flex items-center space-x-2" onClick={ () => setIsOpen(false) }>
-                    <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1754450153/tilt.ai_logo_transparent_t6j0fy.png" alt="TILT.ai Logo" className="h-8" />
+                    <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1754529036/tilt.ai_logo_transparent_jodeqx.png" alt="TILT.ai Logo" className="h-8" />
                 </Link>
 
                 <div className="hidden md:flex items-center space-x-6 text-dark-text font-medium">

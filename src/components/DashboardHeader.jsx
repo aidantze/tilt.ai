@@ -28,7 +28,7 @@ const DashboardHeader = () => {
         <header className="bg-brand-blue text-white">
             <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
                 <Link to="/dashboard" onClick={ closeAllMenus }>
-                    <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1754450153/tilt.ai_logo_nytds8.png" alt="TILT.ai Logo" className="h-8" />
+                    <img src="https://res.cloudinary.com/dg6nuqapw/image/upload/v1754459555/tilt.ai_logo_copy_milji0.png" alt="TILT.ai Logo" className="h-8" />
                 </Link>
 
                 <div className="hidden md:flex items-center space-x-6 font-medium">
